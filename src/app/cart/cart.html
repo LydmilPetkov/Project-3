@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<div class="container">
+  @if (cart.length > 0) { @for (item of cart; track item.id) {
+  <p>{{item.name}}</p>
+  <p>{{item.price}}</p>
+  <p>{{item.qtty}}</p>
+  <hr />
+  } }@else {
+  <p>Cart is Empty!</p>
+  }
+
+  <h3>Total: {{total}}€</h3>
+</div>

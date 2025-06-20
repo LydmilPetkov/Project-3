@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container d-flex justify-content-center my-3">
   <div class="card" style="width: 80%">
     <img
       src="/images/{{product?.imageName}}"
@@ -26,11 +26,14 @@
       <span class="fw-semibold">Rating: </span>{{product?.rating}}
       <i class="bi bi-star-fill"></i>
       <br />
-      <span class="fw-semibold">Stock: </span>{{product?.stock}}
-      <br />
       <span class="fw-semibold">Price: </span>{{product?.price}}
       <br />
       <a href="#" class="card-link">Another link</a>
+    </div>
+    <div class="card-body">
+      <button type="button" class="btn btn-success" (click)="addToCart()">
+        Add to cart
+      </button>
     </div>
   </div>
 </div>

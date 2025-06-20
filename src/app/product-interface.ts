@@ -6,8 +6,8 @@ export interface productInterface {
   CPU: string;
   GPU: string;
   price: number;
-  stock: number;
   imageName: string;
+  qtty: number;
   rating: number;
   isAvailable: boolean;
 }
