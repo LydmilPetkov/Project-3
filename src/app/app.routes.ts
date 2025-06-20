@@ -23,7 +23,7 @@ export const routes: Routes = [
     component: Cart,
   },
   {
-    path: 'details',
+    path: 'details/:id',
     component: ProductDetails,
   },
 ];

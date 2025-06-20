@@ -1,1 +1,36 @@
-<p>product-details works!</p>
+<div class="container">
+  <div class="card" style="width: 80%">
+    <img
+      src="/images/{{product?.imageName}}"
+      class="card-img-top"
+      alt="{{product?.name}}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{product?.name}}</h5>
+      <p class="card-text">{{product?.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="fw-semibold">RAM: </span>{{product?.RAM}}
+      </li>
+      <li class="list-group-item">
+        <span class="fw-semibold">CPU: </span>{{product?.CPU}}
+      </li>
+      <li class="list-group-item">
+        <span class="fw-semibold">GPU: </span>{{product?.GPU}}
+      </li>
+    </ul>
+    <div class="card-body">
+      <span class="fw-semibold">Price: </span>{{product?.price}}€
+      <br />
+      <span class="fw-semibold">Rating: </span>{{product?.rating}}
+      <i class="bi bi-star-fill"></i>
+      <br />
+      <span class="fw-semibold">Stock: </span>{{product?.stock}}
+      <br />
+      <span class="fw-semibold">Price: </span>{{product?.price}}
+      <br />
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
