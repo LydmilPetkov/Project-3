@@ -11,6 +11,7 @@ import { CartService } from '../cart-service';
 export class Cart {
   cart: productInterface[] = [];
   total: number = 0;
+  item: any;
   constructor(private cartService: CartService) {
     this.cart = this.cartService.getCart();
     this.total = this.cartService.calcTotal();
