@@ -1,0 +1,88 @@
+import { productInterface } from './product-interface';
+
+export const myProducts: productInterface[] = [
+  {
+    id: 1,
+    name: 'Alienware Aurora',
+    description:
+      'The Alienware Aurora is engineered for exceptional performance with a streamlined, minimal design. This generation of Aurora desktops focuses on reducing acoustics while maintaining airflow, making it a perfect gaming system for any setting.',
+    RAM: '32GB DDR5',
+    CPU: 'Intel Core Ultra 9 Series 2-285',
+    GPU: 'nVidia GeForce RTX 5070',
+    price: 2449.99,
+    stock: 13,
+    imageName: 'alienware.webp',
+    rating: 4.8,
+    isAvailable: true,
+  },
+  {
+    id: 2,
+    name: 'CyberPowerPC Gamer Supreme',
+    description:
+      'Rule virtual battlefields with this CyberPowerPC Gamer Supreme gaming desktop computer with liquid cooling system. The AMD Ryzen 7 processor delivers smooth performance, and the 32GB DDR5 RAM supports seamless multitasking. This CyberPowerPC Gamer Supreme gaming desktop computer features an AMD Radeon RX 9070 XT graphics card, which offers high frame rates for fluid gaming, while the 2TB NVMe SSD offers ample storage and swift load times.',
+    RAM: '32GB DDR5',
+    CPU: 'AMD Ryzen 7 7800X3D',
+    GPU: 'AMD Radeon RX 9070 XT',
+    price: 1949.99,
+    stock: 9,
+    imageName: 'supreme.webp',
+    rating: 4.4,
+    isAvailable: true,
+  },
+  {
+    id: 3,
+    name: 'Skytech Gaming',
+    description:
+      'Embark on your gaming adventures with the latest from SkyTech Gaming—the remarkable KING95 gaming rig. Harness the sheer power of an AMD Ryzen 7 9700X processor paired with 32GB of high-speed DDR5 6000 MHz RGB memory for unparalleled performance. The 2 TB NVMe storage offers ultra-fast game load times, ensuring you spend more time playing and less time waiting. And with the NVIDIA GeForce RTX 5070 graphics card at its core, the KING95 produces breathtakingly detailed visuals for a truly enveloping gaming experience.',
+    RAM: '32GB DDR4',
+    CPU: 'AMD Ryzen 7 9700X',
+    GPU: 'nVidia GeForce RTX 5070',
+    price: 1879.99,
+    stock: 3,
+    imageName: 'skytech.webp',
+    rating: 4.5,
+    isAvailable: true,
+  },
+  {
+    id: 4,
+    name: 'ASUS ROG G700',
+    description:
+      'The G700 Gaming Desktop combines fearless design, next-generation power, and advanced connectivity into a striking and versatile package. Its dual-glass panel chassis showcases the bold ROG identity with the iconic ROG Slash and Fearless Eye logo, complemented by customizable RGB lighting with Aura Sync. Powered by the next-gen Intel® Core™ Ultra 7 265KF processor and NVIDIA® GeForce RTX™ 5070 GPU, the G700 is equipped with 32GB of DDR5 RAM and 2TB of high-speed PCIe Gen 4 storage for unparalleled performance. A quad-fan airflow system, 240mm AIO liquid cooler, and dust filters ensure optimal thermal management and system longevity. Built for reliability and flexibility, the spacious 58L chassis accommodates triple-slot GPUs, and a full-sized 850W power supply, while the tool-less design allows for effortless upgrades and maintenance. Stay connected with 2.5Gbps Ethernet, WiFi 6, and versatile high-speed ports, while Dolby Atmos delivers multidimensional soundscapes for an immersive audio experience. The G700 is the ultimate choice for gamers and creators seeking a future-ready, high-performance desktop.',
+    RAM: '32GB DDR5',
+    CPU: 'Intel Core Ultra 7 Series 2-265KF ',
+    GPU: 'nVidia GeForce RTX 5070',
+    price: 2029.99,
+    stock: 7,
+    imageName: 'asus.webp',
+    rating: 4.3,
+    isAvailable: true,
+  },
+  {
+    id: 5,
+    name: 'CyberPowerPC Gamer Xtreme',
+    description:
+      'Dominate virtual battlefields with this CyberPowerPC Gamer Xtreme gaming desktop computer. The 24-core Intel Core i9-14900F processor and 32GB of RAM support seamless multitasking, and the 1TB SSD provides fast start-ups and in-game load times. This CyberPowerPC Gamer Xtreme gaming desktop computer comes with an NVIDIA GeForce RTX 5070 graphics card for immersive, stutter-free action.',
+    RAM: '32GB DDR5',
+    CPU: 'Intel Core i9 14900F',
+    GPU: 'AMD Radeon RX 9700 XT',
+    price: 1899.99,
+    stock: 0,
+    imageName: 'xtreme.webp',
+    rating: 4.3,
+    isAvailable: false,
+  },
+  {
+    id: 6,
+    name: 'CyberPowerPC Gamer Master',
+    description:
+      'Dominate virtual battlefields with this CyberPowerPC Gamer Master gaming desktop computer. The octa-core AMD Ryzen 7 processor and 16GB of RAM support seamless multitasking, while the 1TB SSD provides fast start-ups and in-game load times. This CyberPowerPC Gamer Master gaming desktop computer also comes with an AMD Radeon RX 7600 graphics card for immersive, stutter-free action.',
+    RAM: '16GB DDR4',
+    CPU: 'AMD Ryzen 7 8700F',
+    GPU: 'AMD Radeon RX 7600',
+    price: 999.99,
+    stock: 0,
+    imageName: 'master.webp',
+    rating: 4.9,
+    isAvailable: false,
+  },
+];
