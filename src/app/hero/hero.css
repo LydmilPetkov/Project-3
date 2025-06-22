@@ -1,0 +1,10 @@
+.hero-bg {
+  background-image: url("/images/wide.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-txt-h1 {
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+}

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { Hero } from '../hero/hero';
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [Hero],
   templateUrl: './main.html',
-  styleUrl: './main.css'
+  styleUrl: './main.css',
 })
-export class Main {
-
-}
+export class Main {}
