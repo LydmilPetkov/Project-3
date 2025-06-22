@@ -83,7 +83,7 @@ export const myProducts: productInterface[] = [
     imageName: 'master.webp',
     qtty: 1,
     rating: 4.9,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 7,

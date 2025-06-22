@@ -22,14 +22,14 @@
               >
                 <button
                   class="btn btn-outline-secondary btn-sm px-2"
-                  (click)="decreaseQtty(item)"
+                  (click)="decrQtty(item)"
                 >
                   <i class="bi bi-dash"></i>
                 </button>
                 <span class="mx-2">{{item.qtty}}</span>
                 <button
                   class="btn btn-outline-secondary btn-sm px-2"
-                  (click)="increaseQtty(item)"
+                  (click)="incrQtty(item)"
                 >
                   <i class="bi bi-plus"></i>
                 </button>
@@ -54,7 +54,9 @@
   </div>
   <div class="d-flex flex-column align-items-center my-5">
     <p class="fs-4 mb-1">Subtotal: {{totalStr}} €</p>
-    <p class="fs-5 mb-1 text-secondary">Tax (10%): +{{taxAmountStr}} €</p>
+    <p class="fs-5 mb-1 text-secondary">
+      Service tax (10%): +{{taxAmountStr}} €
+    </p>
     <p class="fs-5 mb-1 text-primary">
       Subtotal after tax: {{totalWithTaxStr}} €
     </p>
@@ -66,7 +68,7 @@
       Checkout
     </button>
     <small class="text-muted mt-2"
-      >* 10% tax is included in the grand total.</small
+      >* 10% service tax is included in the grand total.</small
     >
     @if (qualifiesForDiscount) {
     <div class="alert alert-success mt-3">

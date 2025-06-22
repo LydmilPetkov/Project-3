@@ -44,12 +44,12 @@ export class Cart {
     this.finalTotalStr = this.finalTotal.toFixed(2);
   }
 
-  increaseQtty(item: productInterface) {
+  incrQtty(item: productInterface) {
     item.qtty++;
     this.recalculateTotals();
   }
 
-  decreaseQtty(item: productInterface) {
+  decrQtty(item: productInterface) {
     item.qtty--;
     if (item.qtty < 1) {
       this.removeItem(item);
@@ -59,7 +59,6 @@ export class Cart {
 
   removeItem(item: productInterface) {
     this.cart = this.cart.filter((i) => i.id !== item.id);
-    // Also update the cart in the service if needed
     const serviceCart = this.cartService.getCart();
     const idx = serviceCart.findIndex((i) => i.id === item.id);
     if (idx > -1) serviceCart.splice(idx, 1);
