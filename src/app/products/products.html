@@ -1,6 +1,13 @@
 <div class="container">
-  <h1 class="text-center">Product List:</h1>
-  <div class="row row-cols-1 row-cols-md-3 g-4 m-5">
+  <h1 class="text-center mt-4">What we offer:</h1>
+  <div
+    class="bg-info bg-opacity-25 text-primary text-center fw-semibold rounded-3 py-3"
+  >
+    All orders above <span class="fw-bold">10,000€</span> receive a
+    <span class="fw-bold">15% discount </span>
+    automatically at checkout!
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-5">
     @for (item of products; track item.id) {
     <div class="col d-flex">
       <div class="card h-100 d-flex flex-column w-100 shadow">
@@ -17,11 +24,11 @@
           <p class="card-text">
             Rating: {{item.rating}} <i class="bi bi-star-fill"></i>
           </p>
-          <p class="card-text">{{item.isAvailable}}</p>
           <div class="d-flex justify-content-evenly">
-            <a routerLink="/details/{{item.id}}" class="btn btn-primary"
-              >Details</a
-            >
+            @if (item.isAvailable) {
+            <a routerLink="/details/{{item.id}}" class="btn btn-primary">
+              Details
+            </a>
             <button
               type="button"
               class="btn btn-success"
@@ -29,6 +36,15 @@
             >
               Add to cart
             </button>
+            } @else {
+            <button
+              type="button"
+              class="btn btn-outline-secondary disabled"
+              disabled
+            >
+              Out of Stock
+            </button>
+            }
           </div>
         </div>
       </div>
